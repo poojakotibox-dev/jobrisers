@@ -1,8 +1,8 @@
-import amazonLogo from '../assets/amazon1.png'
-import adobeLogo from '../assets/adobe.png'
-import microsoftLogo from '../assets/microsoft.png'
-import infosysLogo from '../assets/infosys.png'
-import tataLogo from '../assets/tata1.png'
+import amazonLogo from '../assets/amazon1.PNG'
+import adobeLogo from '../assets/adobe.PNG'
+import microsoftLogo from '../assets/microsoft.PNG'
+import infosysLogo from '../assets/infosys.PNG'
+import tataLogo from '../assets/tata1.PNG'
 
 const companies = [
   { name: 'Amazon', logo: amazonLogo },
