@@ -164,9 +164,12 @@ function SignIn() {
                 />
                 Keep me signed in
               </label>
-              <a href="/forgot-password" className="text-xs text-indigo-600 font-medium hover:underline">
-                Forgot password?
-              </a>
+             <Link
+  to="/forgot-password"
+  className="text-xs text-indigo-600 font-medium hover:underline"
+>
+  Forgot password?
+</Link>
             </div>
 
             <button className="w-full bg-indigo-600  cursor-pointer text-white font-semibold text-sm py-2.5 rounded-lg hover:bg-indigo-700 transition mb-4">
