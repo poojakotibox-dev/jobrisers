@@ -25,6 +25,14 @@ function Navbar({ variant = 'default', authMode = 'signup' }) {
           </div>
         )}
 
+        {variant === 'app' && (
+          <div className="hidden md:flex items-center gap-8 text-sm font-medium text-gray-700">
+            <Link to="#" className="hover:text-indigo-600">Jobs</Link>
+            <Link to="#" className="hover:text-indigo-600">Companies</Link>
+            <Link to="#" className="hover:text-indigo-600">Career Advice</Link>
+          </div>
+        )}
+
         <div className="flex items-center gap-3">
           {variant === 'auth' ? (
             <>
@@ -33,7 +41,7 @@ function Navbar({ variant = 'default', authMode = 'signup' }) {
                   <span className="hidden sm:inline text-xs sm:text-sm text-gray-500">New to JobRisers?</span>
                   <Link
                     to="/signup"
-                    className="bg-indigo-600 text-white text-xs sm:text-sm text-sm font-semibold px-3 sm:px-5 py-1.5 sm:py-2.5 rounded-full hover:bg-indigo-700 transition"
+                    className="bg-indigo-600 text-white text-xs sm:text-sm font-semibold px-3 sm:px-5 py-1.5 sm:py-2.5 rounded-full hover:bg-indigo-700 transition"
                   >
                     Create an account
                   </Link>
@@ -56,6 +64,13 @@ function Navbar({ variant = 'default', authMode = 'signup' }) {
                 {menuOpen ? <FiX size={22} /> : <FiMenu size={22} />}
               </button>
             </>
+          ) : variant === 'app' ? (
+            <div className="flex items-center gap-2">
+              <div className="w-8 h-8 bg-indigo-600 rounded-full flex items-center justify-center text-white text-xs font-bold shrink-0">
+                AJ
+              </div>
+              <span className="hidden sm:inline text-sm font-medium text-gray-700">Alex Johnson</span>
+            </div>
           ) : (
             <div className="flex items-center gap-5">
               <Link to="/login" className="text-sm font-medium text-gray-700 hover:text-gray-900">

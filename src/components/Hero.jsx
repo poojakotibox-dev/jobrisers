@@ -68,8 +68,8 @@ function Hero() {
           <img src={heroImg1} alt="Job seeker" className="relative z-10 max-w-[220px] sm:max-w-xs md:max-w-sm w-full" />
 
           {/* Top-right badge */}
-          <div className="absolute top-4 right-0 sm:top-10 bg-white rounded-xl shadow-lg px-3 py-2 sm:px-4 flex items-center gap-2 z-20">
-            <div className="w-7 h-7 sm:w-8 sm:h-8 bg-indigo-100 rounded-full flex items-center justify-center text-indigo-600 font-bold text-[10px] sm:text-xs">
+          <div className="absolute top-4 right-0 sm:top-10 bg-white rounded-xl shadow-lg px-2 py-2 sm:px-4 flex items-center gap-2 z-20">
+            <div className="w-6 h-6 sm:w-8 sm:h-8 bg-indigo-100 rounded-full flex items-center justify-center text-indigo-600 font-bold text-[9px] sm:text-xs">
               50K+
             </div>
             <div className="text-[10px] sm:text-xs">
@@ -79,13 +79,13 @@ function Hero() {
           </div>
 
           {/* Bottom badge */}
-          <div className="absolute bottom-6 sm:bottom-16 left-0 bg-white rounded-full shadow-lg pl-1 pr-3 sm:pr-4 py-1 flex items-center gap-2 z-20 max-w-[180px] sm:max-w-none">
+          <div className="absolute bottom-6 sm:bottom-16 left-0 bg-white rounded-full shadow-lg pl-1 pr-3 sm:pr-4 py-1 flex items-center gap-2 z-20 whitespace-nowrap">
             <div className="flex -space-x-2 shrink-0">
               <div className="w-6 h-6 sm:w-7 sm:h-7 rounded-full bg-indigo-300 border-2 border-white"></div>
               <div className="w-6 h-6 sm:w-7 sm:h-7 rounded-full bg-pink-300 border-2 border-white"></div>
               <div className="w-6 h-6 sm:w-7 sm:h-7 rounded-full bg-yellow-300 border-2 border-white"></div>
             </div>
-            <p className="text-[10px] sm:text-xs text-gray-600 font-medium leading-tight">
+            <p className="text-[8px] sm:text-xs text-gray-600 font-medium">
               Join thousands growing with JobRisers
             </p>
           </div>

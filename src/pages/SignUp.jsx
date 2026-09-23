@@ -10,6 +10,7 @@ import signupImg from '../assets/boydummy.png'
 import { signUpData } from '../data/authData'
 import ellipseImg from '../assets/Ellipse.png'
 import arrowImg from '../assets/Arrow.png'
+import { useNavigate } from 'react-router-dom'
 
 const iconMap = {
   briefcase: FiBriefcase,
@@ -19,6 +20,7 @@ const iconMap = {
 
 function SignUp() {
   const [accountType, setAccountType] = useState('jobseeker')
+  const navigate = useNavigate()
 
   return (
     <div className="min-h-screen bg-indigo-50/50">
@@ -181,9 +183,12 @@ function SignUp() {
               <p>○ Include a special character</p>
             </div>
 
-            <button className="w-full cursor-pointer bg-indigo-600 text-white font-semibold text-sm py-2.5 rounded-lg hover:bg-indigo-700 transition mb-4">
-              Create Account →
-            </button>
+           <button 
+  onClick={() => navigate('/onboarding')}
+  className="w-full bg-indigo-600 cursor-pointer text-white font-semibold py-3 rounded-lg hover:bg-indigo-700 transition mb-6"
+>
+  Create Account →
+</button>
 
             <div className="flex items-center gap-3 mb-4">
               <div className="flex-1 h-px bg-gray-200" />
