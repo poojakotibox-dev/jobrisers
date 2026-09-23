@@ -2,7 +2,6 @@ import { Suspense, lazy } from 'react'
 import { Routes, Route } from 'react-router-dom'
 import './App.css'
 
-
 const Home = lazy(() => import('./pages/Home'))
 const SignUp = lazy(() => import('./pages/SignUp'))
 const SignIn = lazy(() => import('./pages/SignIn'))
@@ -12,8 +11,6 @@ const OnboardingRole = lazy(() => import('./pages/OnboardingRole'))
 const OnboardingGoals = lazy(() => import('./pages/OnboardingGoals'))
 const OnboardingLocation = lazy(() => import('./pages/OnboardingLocation'))
 const OnboardingComplete = lazy(() => import('./pages/OnboardingComplete'))
-
-
 
 function Loader() {
   return (
@@ -30,13 +27,16 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/signup" element={<SignUp />} />
         <Route path="/login" element={<SignIn />} />
-        <Route path="/jobs" element={<Jobs/>} />
-        <Route path="/forgot-Password" element={<ForgotPassword/>} />
-        <Route path="/onboarding" element={<OnboardingGoals />} />
-        <Route path="/onboarding/role" element={<OnboardingRole />}/>
-        <Route path='/onboarding/location' element={<OnboardingLocation/>}/>
-           <Route path='/onboarding/complete' element={<OnboardingComplete/>}/>
+        <Route path="/jobs" element={<Jobs />} />
 
+        {/* Forgot Password */}
+        <Route path="/forgot-password" element={<ForgotPassword />} />
+
+        {/* Onboarding */}
+        <Route path="/onboarding" element={<OnboardingGoals />} />
+        <Route path="/onboarding/role" element={<OnboardingRole />} />
+        <Route path="/onboarding/location" element={<OnboardingLocation />} />
+        <Route path="/onboarding/complete" element={<OnboardingComplete />} />
       </Routes>
     </Suspense>
   )
