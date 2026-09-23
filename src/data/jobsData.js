@@ -1,0 +1,126 @@
+export const jobsPageData = {
+  hero: {
+    heading: 'Find Your Next Opportunity',
+    subtext: 'Explore 50,000+ jobs from top companies and take the next step in your career.',
+    searchPlaceholder: 'Job title, skills or company',
+    locationPlaceholder: 'Location',
+  },
+
+  filters: {
+    experienceLevel: [
+      { label: 'Entry Level (0-2 years)', count: 4120, checked: true },
+      { label: 'Mid Level (2-5 years)', count: 8320, checked: true },
+      { label: 'Senior Level (5-10 years)', count: 3210, checked: true },
+      { label: 'Executive (10+ years)', count: 1120, checked: true },
+    ],
+    salaryRange: [
+      { label: 'Any', count: null, checked: true },
+      { label: '₹0 - ₹3 LPA', count: 2310, checked: false },
+      { label: '₹3 - ₹10 LPA', count: 6420, checked: false },
+      { label: '₹10 - ₹20 LPA', count: 5340, checked: false },
+      { label: '₹20+ LPA', count: 1980, checked: false },
+    ],
+    jobType: [
+      { label: 'Full-time', count: 12440, checked: true },
+      { label: 'Part-time', count: 2230, checked: true },
+      { label: 'Contract', count: 1540, checked: false },
+      { label: 'Internship', count: 1120, checked: false },
+    ],
+    workMode: [
+      { label: 'On-site', count: 8210, checked: false },
+      { label: 'Remote', count: 4310, checked: true },
+      { label: 'Hybrid', count: 3070, checked: true },
+    ],
+  },
+
+  totalJobs: '12,490 jobs found',
+  sortOptions: ['Most Relevant', 'Newest', 'Salary: High to Low', 'Salary: Low to High'],
+
+  jobs: [
+    {
+      id: 1,
+      logoLetter: 'G',
+      logoColor: 'bg-red-100 text-red-600',
+      title: 'Product Designer',
+      company: 'Google',
+      location: 'Bengaluru, India',
+      workMode: 'Remote',
+      experience: '3-5 years',
+      tags: ['Figma', 'UI/UX', 'User Research', 'Prototyping'],
+      postedAgo: '2 days ago',
+    },
+    {
+      id: 2,
+      logoLetter: '',
+      logoColor: 'bg-blue-100 text-blue-600',
+      title: 'Software Engineer',
+      company: 'Microsoft',
+      location: 'Hyderabad, India',
+      workMode: 'Hybrid',
+      experience: '2-5 years',
+      tags: ['React', 'Node.js', 'TypeScript', 'System Design'],
+      postedAgo: '1 day ago',
+    },
+    {
+      id: 3,
+      logoLetter: '',
+      logoColor: 'bg-yellow-100 text-yellow-600',
+      title: 'Product Manager',
+      company: 'Amazon',
+      location: 'Bengaluru, India',
+      workMode: 'On-site',
+      experience: '5-8 years',
+      tags: ['Product Strategy', 'Analytics', 'Leadership', 'Roadmaps'],
+      postedAgo: '3 days ago',
+    },
+    {
+      id: 4,
+      logoLetter: 'A',
+      logoColor: 'bg-red-100 text-red-600',
+      title: 'UI/UX Designer',
+      company: 'Adobe',
+      location: 'Noida, India',
+      workMode: 'Hybrid',
+      experience: '3-6 years',
+      tags: ['Figma', 'Design Systems', 'User Testing', 'Visual Design'],
+      postedAgo: '4 days ago',
+    },
+    {
+      id: 5,
+      logoLetter: '',
+      logoColor: 'bg-green-100 text-green-600',
+      title: 'Data Analyst',
+      company: 'Spotify',
+      location: 'Remote',
+      workMode: 'Remote',
+      experience: '2-4 years',
+      tags: ['SQL', 'Python', 'Data Visualization', 'A/B Testing'],
+      postedAgo: '5 days ago',
+    },
+  ],
+
+  sidebarWidgets: {
+    jobAlert: {
+      title: 'Get job alerts that match your skills',
+      subtext: 'Be the first to know about new opportunities',
+      buttonLabel: 'Create Job Alert',
+    },
+    recentSearches: {
+      title: 'Recent Searches',
+      items: [
+        { label: 'Product Designer', meta: 'in Bengaluru, India' },
+        { label: 'Remote Jobs', meta: 'Worldwide' },
+        { label: 'UI/UX Designer', meta: 'in India' },
+        { label: 'Google Jobs', meta: '' },
+        { label: 'Design', meta: 'in Bengaluru, India' },
+      ],
+    },
+    resumeUpload: {
+      title: 'Stand out from the crowd',
+      subtext: 'Add your resume and get noticed by top employers.',
+      buttonLabel: 'Upload Resume',
+    },
+  },
+
+  pagination: { currentPage: 1, totalPages: 500 },
+}

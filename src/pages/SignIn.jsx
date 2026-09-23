@@ -164,7 +164,7 @@ function SignIn() {
                 />
                 Keep me signed in
               </label>
-              <a href="#" className="text-xs text-indigo-600 font-medium hover:underline">
+              <a href="/forgot-password" className="text-xs text-indigo-600 font-medium hover:underline">
                 Forgot password?
               </a>
             </div>

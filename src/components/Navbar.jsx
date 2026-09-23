@@ -27,7 +27,7 @@ function Navbar({ variant = 'default', authMode = 'signup' }) {
 
         {variant === 'app' && (
           <div className="hidden md:flex items-center gap-8 text-sm font-medium text-gray-700">
-            <Link to="#" className="hover:text-indigo-600">Jobs</Link>
+            <Link to="/jobs" className="hover:text-indigo-600">Jobs</Link>
             <Link to="#" className="hover:text-indigo-600">Companies</Link>
             <Link to="#" className="hover:text-indigo-600">Career Advice</Link>
           </div>

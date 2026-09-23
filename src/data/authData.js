@@ -50,3 +50,18 @@ export const signInData = {
     { value: '95%', label: 'Success Stories' },
   ],
 }
+export const forgotPasswordData = {
+  heading: 'Forgot Password?',
+  subtext: "Don't worry! Enter your registered email address and we'll send you a link to reset your password.",
+  emailLabel: 'Email Address',
+  emailPlaceholder: 'you@example.com',
+  buttonLabel: 'Send Reset Link',
+  backToLogin: 'Back to Sign In',
+
+  successState: {
+    heading: 'Check your email',
+    subtext: "We've sent a password reset link to",
+    resendText: "Didn't receive the email?",
+    resendButtonLabel: 'Click to resend',
+  },
+}

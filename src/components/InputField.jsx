@@ -1,4 +1,4 @@
-function InputField({ label, type = 'text', placeholder, icon: Icon }) {
+function InputField({ label, type = 'text', placeholder, icon: Icon, value, onChange }) {
   return (
     <div className="mb-4">
       <label className="block text-sm font-medium text-gray-700 mb-1.5">{label}</label>
@@ -7,6 +7,8 @@ function InputField({ label, type = 'text', placeholder, icon: Icon }) {
         <input
           type={type}
           placeholder={placeholder}
+          value={value}
+          onChange={onChange}
           className="w-full outline-none text-sm text-gray-700 bg-transparent"
         />
       </div>

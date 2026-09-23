@@ -6,6 +6,8 @@ import './App.css'
 const Home = lazy(() => import('./pages/Home'))
 const SignUp = lazy(() => import('./pages/SignUp'))
 const SignIn = lazy(() => import('./pages/SignIn'))
+const Jobs = lazy(() => import('./pages/Jobs'))
+const ForgotPassword = lazy(() => import('./pages/ForgotPassword'))
 const OnboardingRole = lazy(() => import('./pages/OnboardingRole'))
 const OnboardingGoals = lazy(() => import('./pages/OnboardingGoals'))
 const OnboardingLocation = lazy(() => import('./pages/OnboardingLocation'))
@@ -28,6 +30,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/signup" element={<SignUp />} />
         <Route path="/login" element={<SignIn />} />
+        <Route path="/jobs" element={<Jobs/>} />
+        <Route path="/forgot-Password" element={<ForgotPassword/>} />
         <Route path="/onboarding" element={<OnboardingGoals />} />
         <Route path="/onboarding/role" element={<OnboardingRole />}/>
         <Route path='/onboarding/location' element={<OnboardingLocation/>}/>
