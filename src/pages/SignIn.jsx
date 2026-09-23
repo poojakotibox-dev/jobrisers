@@ -24,7 +24,7 @@ function SignIn() {
     <div className="min-h-screen bg-indigo-50/50">
       <Navbar variant="auth" authMode="signin"/>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-12 pt-4 pb-8 md:pt-6 md:pb-10">
+      <div className="max-w-7xl mx-auto px-4  pt-4 pb-8 md:pt-6 md:pb-10">
         <div className="grid grid-cols-1 md:grid-cols-[1fr_auto_1fr] gap-8 md:gap-6 items-center">
           {/* Left side - text content */}
           <div className="order-2 md:order-1">
@@ -88,13 +88,13 @@ function SignIn() {
   </div>
 
   {/* Bottom badge with avatars */}
-  <div className="absolute bottom-4 left-0 sm:left-[-10px] bg-white rounded-full shadow-lg pl-1 pr-3 py-1 flex items-center gap-2 z-20 max-w-[260px]">
+  <div className="absolute bottom-4 left-0 sm:left-[-10px] bg-white rounded-full shadow-lg pl-1 pr-3 py-1 flex items-center gap-2 z-20 whitespace-nowrap">
     <div className="flex -space-x-2 shrink-0">
       <div className="w-6 h-6 rounded-full bg-indigo-300 border-2 border-white"></div>
       <div className="w-6 h-6 rounded-full bg-pink-300 border-2 border-white"></div>
       <div className="w-6 h-6 rounded-full bg-yellow-300 border-2 border-white"></div>
     </div>
-    <p className="text-[10px] text-gray-600 font-medium leading-tight">
+    <p className="text-[8px] text-gray-600 font-medium ">
       Join thousands of professionals growing with JobRisers
     </p>
   </div>
