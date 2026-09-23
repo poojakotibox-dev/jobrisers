@@ -14,7 +14,7 @@ import { onboardingData } from '../data/onboardingData'
 import { useNavigate } from 'react-router-dom'
 
 //  Image import
-import brighter from '../assets/brighter-future.jpeg'
+import brighter from "../assets/Brighter-future.jpeg";
 
 const iconMap = {
   briefcase: FiBriefcase,
