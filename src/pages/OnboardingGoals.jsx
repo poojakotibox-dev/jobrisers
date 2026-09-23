@@ -13,7 +13,7 @@ import StepIndicator from '../components/StepIndicator'
 import { onboardingData } from '../data/onboardingData'
 import { useNavigate } from 'react-router-dom'
 
-// 👇 Image import
+//  Image import
 import brighter from '../assets/brighter-future.jpeg'
 
 const iconMap = {
