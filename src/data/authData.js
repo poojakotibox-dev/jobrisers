@@ -30,3 +30,23 @@ export const signUpData = {
     { value: '95%', label: 'Success Stories' },
   ],
 }
+
+export const signInData = {
+  heading: 'Find Your Next Opportunity',
+  subtext: 'Thousands of jobs. Top companies. A brighter future.',
+  features: [
+    { title: 'Discover', desc: 'Search from thousands of verified jobs', icon: 'search' },
+    { title: 'Apply', desc: 'Easy and quick applications', icon: 'send' },
+    { title: 'Grow', desc: 'Take the next step in your career', icon: 'chart' },
+  ],
+  testimonial: {
+    text: 'JobNest made my job search simple and stress-free. I found the right role in just 3 weeks!',
+    author: 'Priya S., Product Designer',
+  },
+  stats: [
+    { value: '50K+', label: 'Active Jobs' },
+    { value: '10K+', label: 'Companies' },
+    { value: '1M+', label: 'Job Seekers' },
+    { value: '95%', label: 'Success Stories' },
+  ],
+}

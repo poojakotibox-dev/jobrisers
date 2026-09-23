@@ -37,7 +37,7 @@ function Hero() {
                 className="w-full py-2 outline-none text-sm text-gray-700 min-w-0"
               />
             </div>
-            <button className="w-full sm:w-auto bg-indigo-600 text-white font-semibold text-sm px-6 py-2.5 rounded-full hover:bg-indigo-700 transition whitespace-nowrap shrink-0">
+            <button className="w-full cursor-pointer sm:w-auto bg-indigo-600 text-white font-semibold text-sm px-6 py-2.5 rounded-full hover:bg-indigo-700 transition whitespace-nowrap shrink-0">
               Search Jobs
             </button>
           </div>

@@ -4,7 +4,7 @@ import './App.css'
 
 const Home = lazy(() => import('./pages/Home'))
 const SignUp = lazy(() => import('./pages/SignUp'))
-// const SignIn = lazy(() => import('./pages/SignIn'))
+const SignIn = lazy(() => import('./pages/SignIn'))
 
 function Loader() {
   return (
@@ -20,7 +20,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/signup" element={<SignUp />} />
-        {/* <Route path="/login" element={<SignIn />} /> */}
+        <Route path="/login" element={<SignIn />} />
       </Routes>
     </Suspense>
   )

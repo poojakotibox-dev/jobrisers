@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { FiMenu, FiX } from 'react-icons/fi'
 import logo from '../assets/logo.jpeg'
 
-function Navbar({ variant = 'default' }) {
+function Navbar({ variant = 'default', authMode = 'signup' }) {
   const [menuOpen, setMenuOpen] = useState(false)
 
   return (
@@ -28,13 +28,27 @@ function Navbar({ variant = 'default' }) {
         <div className="flex items-center gap-3">
           {variant === 'auth' ? (
             <>
-              <span className="hidden sm:inline text-sm text-gray-500">Already have an account?</span>
-              <Link
-                to="/login"
-                className="bg-indigo-600 text-white text-sm font-semibold px-5 py-2.5 rounded-lg hover:bg-indigo-700 transition"
-              >
-                Sign in
-              </Link>
+              {authMode === 'signin' ? (
+                <>
+                  <span className="hidden sm:inline text-xs sm:text-sm text-gray-500">New to JobRisers?</span>
+                  <Link
+                    to="/signup"
+                    className="bg-indigo-600 text-white text-xs sm:text-sm text-sm font-semibold px-3 sm:px-5 py-1.5 sm:py-2.5 rounded-full hover:bg-indigo-700 transition"
+                  >
+                    Create an account
+                  </Link>
+                </>
+              ) : (
+                <>
+                  <span className="hidden sm:inline text-sm text-gray-500">Already have an account?</span>
+                  <Link
+                    to="/login"
+                    className="bg-indigo-600 text-white text-sm font-semibold px-5 py-2.5 rounded-full hover:bg-indigo-700 transition"
+                  >
+                    Sign in
+                  </Link>
+                </>
+              )}
               <button
                 onClick={() => setMenuOpen(!menuOpen)}
                 className="md:hidden text-gray-700 p-1"
@@ -58,7 +72,6 @@ function Navbar({ variant = 'default' }) {
         </div>
       </div>
 
-      {/* Mobile dropdown menu - slides down as overlay, doesn't push content */}
       {variant === 'auth' && (
         <div
           className={`md:hidden absolute top-full left-0 w-full bg-white border-t border-gray-100 shadow-lg overflow-hidden transition-all duration-300 ease-in-out ${
